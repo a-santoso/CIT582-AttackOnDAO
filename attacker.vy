@@ -60,9 +60,9 @@ def attack(dao_address:address):
     send(self.owner_address, msg.value)
     send(self.owner_address, msg.value)
    
-    send(self.owner_address, value = deposit_amount)
-    send(self.owner_address, value = deposit_amount)
-    send(self.owner_address, value = deposit_amount)
+    send(self.owner_address, deposit_amount)
+    send(self.owner_address, deposit_amount)
+    send(self.owner_address, deposit_amount)
     
     pass
 
