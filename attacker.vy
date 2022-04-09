@@ -18,6 +18,8 @@ def _attack() -> bool:
     # TODO: Use the DAO interface to withdraw funds.
     # Make sure you add a "base case" to end the recursion
     
+    #if (userBalances(self.dao_address) >= 
+    
     DAO(self.dao_address).withdraw()
 
     return True
@@ -39,6 +41,7 @@ def attack(dao_address:address):
     self._attack()
 
     # TODO: After the recursion has finished, all the stolen funds are held by this contract. Now, you need to send all funds (deposited and stolen) to the entity that called this contract
+    DAO(owner_address).deposit(value = deposit_amount)
     
     pass
 
