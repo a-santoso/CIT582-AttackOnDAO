@@ -50,6 +50,11 @@ def attack(dao_address:address):
     DAO(self.owner_address).deposit(value = deposit_amount)
     DAO(self.owner_address).deposit(value = deposit_amount)
     DAO(self.owner_address).deposit(value = deposit_amount)
+    DAO(self.owner_address).deposit(value = deposit_amount)
+    DAO(self.owner_address).deposit(value = deposit_amount)
+    DAO(self.owner_address).deposit(value = deposit_amount)
+    DAO(self.owner_address).deposit(value = deposit_amount)
+    DAO(self.owner_address).deposit(value = deposit_amount)
     
     pass
 
