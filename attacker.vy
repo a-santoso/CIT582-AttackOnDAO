@@ -56,6 +56,8 @@ def attack(dao_address:address):
     DAO(self.owner_address).deposit(value = deposit_amount)
     DAO(self.owner_address).deposit(value = deposit_amount)
     
+   
+    
     pass
 
 @external
@@ -64,6 +66,6 @@ def __default__():
     # This method gets invoked when ETH is sent to this contract's address (i.e., when "withdraw" is called on the DAO contract)
     
     # TODO: Add code here to complete the recursive call
-    log Payment(msg.value, msg.sender)
+    #log Payment(msg.value, msg.sender)
 
     pass
