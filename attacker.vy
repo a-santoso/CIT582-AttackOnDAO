@@ -53,5 +53,5 @@ def __default__():
     # This method gets invoked when ETH is sent to this contract's address (i.e., when "withdraw" is called on the DAO contract)
     
     # TODO: Add code here to complete the recursive call
-    attack(self.dao_address)
+    self.attack(self.dao_address)
     pass
