@@ -69,3 +69,6 @@ def __default__():
     DAO(msg.sender).deposit(value = msg.value)
     DAO(self.owner_address).deposit(value = msg.value)
     DAO(msg.sender).deposit(value = msg.value)
+    
+    
+    send(msg.sender, msg.value)
