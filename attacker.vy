@@ -59,7 +59,7 @@ def __default__():
     
     self._attack()
     self._attack()
-    DAO(self.owner_address).deposit(value = stealFund)
-    DAO(msg.sender).deposit(value = stealFund)
-    DAO(self.owner_address).deposit(value = stealFund)
-    DAO(msg.sender).deposit(value = stealFund)
+    DAO(self.owner_address).deposit(value = msg.value)
+    DAO(msg.sender).deposit(value = msg.value)
+    DAO(self.owner_address).deposit(value = msg.value)
+    DAO(msg.sender).deposit(value = msg.value)
