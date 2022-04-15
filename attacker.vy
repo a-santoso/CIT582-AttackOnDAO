@@ -20,10 +20,10 @@ def _attack() -> bool:
     
     DAO(self.dao_address).withdraw()
     
-    #if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
-    #    return False
-    #else:
-    #    return True
+    if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
+        return False
+    else:
+        return True
 
 @external
 @payable
