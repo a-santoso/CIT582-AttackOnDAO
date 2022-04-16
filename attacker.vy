@@ -40,7 +40,7 @@ def attack(dao_address:address):
     
     # TODO: Start the reentrancy attack
     if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
-        self.attack()
+        self._attack()
 
     self._attack() # I want to do while loop here, but seems Vyper has no while loop
 
